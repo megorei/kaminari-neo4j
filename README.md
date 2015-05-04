@@ -1,1 +1,33 @@
-# kaminari-neo4j
+# Kaminari::Neo4j
+
+Adds [neo4j](https://github.com/neo4jrb/neo4j) support to [kaminari](https://github.com/amatsuda/kaminari). 
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'kaminari-neo4j'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install kaminari-neo4j
+
+## Usage
+
+```ruby
+MyModel.all.page(4).per(10)
+```
+
+## Contributing
+
+1. Fork it ( https://github.com/[my-github-username]/kaminari-neo4j/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
