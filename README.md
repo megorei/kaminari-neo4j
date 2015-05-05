@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-MyModel.all.page(4).per(10)
+MyModel.page(4).per(10)
 ```
 
 ## Contributing
