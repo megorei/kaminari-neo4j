@@ -1,8 +1,10 @@
 require 'kaminari/neo4j/version'
-require 'activesupport'
+require 'active_support'
 require 'neo4j'
-require 'kaminari/models/neo4j_criteria_methods'
+require 'kaminari'
 require 'kaminari/models/configuration_methods'
-require 'kaminari/neo4j/models/neo4j_paginated'
-require 'kaminari/neo4j/models/neo4j_extension'
-
+require 'kaminari/neo4j/criteria_methods'
+require 'kaminari/neo4j/paginated'
+require 'kaminari/neo4j/extension'
+require 'kaminari/neo4j/hooks'
+Kaminari::Neo4j::Hooks.init
