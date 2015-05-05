@@ -2,9 +2,9 @@ PATH
   remote: .
   specs:
     kaminari-neo4j (0.0.1)
-      activesupport
-      kaminari
-      neo4j (>= 4)
+      activesupport (>= 3.0)
+      kaminari (>= 0.16.3)
+      neo4j (>= 4.0)
 
 GEM
   remote: https://rubygems.org/

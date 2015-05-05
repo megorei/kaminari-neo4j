@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Dieter Pisarewski']
   spec.email         = ['dieter.pisarewski@gmail.com']
   spec.summary       = 'Neo4j support for kaminari'
-  spec.description   = 'Adds Neo4j support for kaminari'
+  spec.description   = 'Adds Neo4j support to kaminari'
   spec.homepage      = 'https://github.com/megorei/kaminari-neo4j'
   spec.license       = 'MIT'
 
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'activesupport'
-  spec.add_dependency 'neo4j', '>= 4'
-  spec.add_dependency 'kaminari'
+  spec.add_dependency 'activesupport', '>= 3.0'
+  spec.add_dependency 'neo4j', '>= 4.0'
+  spec.add_dependency 'kaminari', '>= 0.16.3'
 end
