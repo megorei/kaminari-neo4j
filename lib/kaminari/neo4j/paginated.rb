@@ -19,12 +19,7 @@ module Kaminari
       end
 
       def total
-        target  = target(source)
-        if source.instance_of?(::Neo4j::Core::Query)
-          source.reorder.with("#{target} as #{target}").pluck("COUNT(#{target})").first
-        else
-          source.count
-        end
+        source.count
       end
 
       def items
@@ -35,10 +30,6 @@ module Kaminari
         new(source, page, per_page)
       end
 
-      def target(source)
-        source.instance_of?(::Neo4j::Core::Query) ? return_var : source.identity
-      end
-
       def per(num)
         self.class.create_from(source, current_page, num)
       end
@@ -46,11 +37,6 @@ module Kaminari
       def pluck(*args)
         @items = source.pluck(*args)
         self
-      end
-
-      def return_var
-        clause = source.instance_variable_get('@clauses').find { |c| c.is_a?(::Neo4j::Core::QueryClauses::ReturnClause) }
-        clause.instance_variable_get('@arg')
       end
 
       def to_ary
