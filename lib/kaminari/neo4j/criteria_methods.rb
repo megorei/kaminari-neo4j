@@ -3,7 +3,8 @@ module Kaminari
     module CriteriaMethods
       include Kaminari::PageScopeMethods
 
-      delegate :default_per_page, :max_per_page, :max_pages, :to => :model
+      delegate :model, to: :source
+      delegate :default_per_page, :max_per_page, :max_pages, to: :model
 
       def entry_name
         model.model_name.human.downcase
