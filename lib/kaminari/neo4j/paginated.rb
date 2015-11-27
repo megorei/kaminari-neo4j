@@ -15,6 +15,7 @@ module Kaminari
       def initialize(source, current_page, per_page = nil)
         self.source = source
         self.current_page = (current_page || 1).to_i
+        self.current_page = 1 if self.current_page < 1
         self.per_page = (per_page || default_per_page).to_i
       end
 
