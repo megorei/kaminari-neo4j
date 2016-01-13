@@ -7,7 +7,7 @@ Adds [neo4j](https://github.com/neo4jrb/neo4j) support to [kaminari](https://git
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'kaminari-neo4j'
+gem 'kaminari-neo4j', require: 'kaminari/neo4j'
 ```
 
 And then execute:
