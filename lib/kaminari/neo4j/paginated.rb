@@ -27,6 +27,10 @@ module Kaminari
         @items || source.skip((current_page - 1) * per_page).limit(per_page)
       end
 
+      def method_missing(name, *args, &block)
+        items.respond_to?(name) ? items.send(name, *args, &block) : super
+      end
+
       def self.create_from(source, page, per_page = 0)
         new(source, page, per_page)
       end
