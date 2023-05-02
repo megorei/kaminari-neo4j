@@ -1,6 +1,6 @@
 require 'kaminari/activegraph/version'
 require 'active_support'
-require 'activegraph'
+require 'active_graph'
 require 'kaminari'
 require 'kaminari/models/configuration_methods'
 require 'kaminari/activegraph/criteria_methods'
