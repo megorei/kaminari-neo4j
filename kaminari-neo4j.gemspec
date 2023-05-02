@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'activesupport', '>= 3.0'
-  spec.add_dependency 'neo4j', '>= 4.0'
-  spec.add_dependency 'kaminari', '>= 0.16.3'
+  spec.add_dependency 'activesupport', '>= 7.0'
+  spec.add_dependency 'activegraph'
+  spec.add_dependency 'kaminari', '>= 1.0'
 end
