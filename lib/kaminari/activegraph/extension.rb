@@ -1,10 +1,10 @@
 module Kaminari
-  module Neo4j
+  module ActiveGraph
     module Extension
       module QueryMethods
         eval <<-RUBY
           def #{Kaminari.config.page_method_name}(num = nil)
-            Kaminari::Neo4j::Paginated.new(self, num)
+            Kaminari::ActiveGraph::Paginated.new(self, num)
           end
         RUBY
       end

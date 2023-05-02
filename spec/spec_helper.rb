@@ -1,5 +1,5 @@
 require 'rails'
-require 'kaminari-neo4j'
+require 'kaminari-activegraph'
 require 'database_cleaner'
 
 DatabaseCleaner[:neo4j, connection: {type: :server_db, path: "http://localhost:7475"}].strategy = :deletion

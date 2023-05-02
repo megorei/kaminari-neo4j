@@ -1,0 +1,10 @@
+require 'kaminari/activegraph/version'
+require 'active_support'
+require 'activegraph'
+require 'kaminari'
+require 'kaminari/models/configuration_methods'
+require 'kaminari/activegraph/criteria_methods'
+require 'kaminari/activegraph/paginated'
+require 'kaminari/activegraph/extension'
+require 'kaminari/activegraph/hooks'
+Kaminari::ActiveGraph::Hooks.init

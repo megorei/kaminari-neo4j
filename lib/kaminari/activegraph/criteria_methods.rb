@@ -1,5 +1,5 @@
 module Kaminari
-  module Neo4j
+  module ActiveGraph
     module CriteriaMethods
       include Kaminari::PageScopeMethods
 
