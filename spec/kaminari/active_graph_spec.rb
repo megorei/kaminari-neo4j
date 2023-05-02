@@ -1,6 +1,6 @@
-RSpec.describe Kaminari::Neo4j do
+RSpec.describe Kaminari::ActiveGraph do
   class MyThing
-    include Neo4j::ActiveNode
+    include ActiveGraph::ActiveNode
     property :a
     property :x
   end

@@ -1,8 +1,8 @@
 module Kaminari
-  module Neo4j
+  module ActiveGraph
     class Paginated
       include Enumerable
-      include Kaminari::Neo4j::CriteriaMethods
+      include Kaminari::ActiveGraph::CriteriaMethods
       include Kaminari::ConfigurationMethods::ClassMethods
 
       attr_accessor :source, :total, :current_page, :per_page

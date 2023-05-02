@@ -1,13 +1,13 @@
-# Kaminari::Neo4j
+# Kaminari::ActiveGraph
 
-Adds [neo4j](https://github.com/neo4jrb/neo4j) support to [kaminari](https://github.com/amatsuda/kaminari).
+Adds [ActiveGraph](https://github.com/neo4jrb/activegraph) support to [kaminari](https://github.com/amatsuda/kaminari).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'kaminari-neo4j'
+gem 'kaminari-activegraph'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install kaminari-neo4j
+    $ gem install kaminari-activegraph
 
 ## Usage
 
@@ -26,7 +26,7 @@ MyModel.page(4).per(10)
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/kaminari-neo4j/fork )
+1. Fork it ( https://github.com/[my-github-username]/kaminari-activegraph/fork )
 2. Install the development dependencies (`bundle install`)
 3. Create your feature branch (`git checkout -b my-new-feature`)
 4. Make your changes
